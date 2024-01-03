@@ -3,9 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>MWA</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
-    
+    <main>
+    <header class="header">
+        <a href="./index.html" class="logo">
+            <img src="/img/MWA_LOGO.svg" alt="" class="logo-original">
+            <img src="/img/mwa_logo3.png" alt="" style="display: none;" class="white-logo">
+        </a>
+        <ul class="navbar">
+            <li><a href="#">Digital Marketing</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Graphic Design</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="main">
+            <!-- uso del menu de remix icons -->
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+        <script src="./scripts/nav.js"></script>
+    </header>
+        
+        <section class="hero">
+            <div class="hero__text">
+                <h1>Welcome to MWA</h1>
+            </div>
+        </section>
+        
+        <section class="call_to_action">
+            <div class="container">
+                <h2 class="call_to_action__title">
+                    What are you looking for?
+                </h2>
+                <div class="call_to_action__suggestions">
+                    <a href="" class="color1">Sales increase?</a>
+                    <a href="" class="color2">A new logo?</a>
+                    <a href="" class="color1">Improve appearance of your business?</a>
+                    <a href="" class="color2">General help for your business?</a>
+                </div>
+            </div>
+        </section>
+        <!-- TODO:We can add some illustration that attaches this -->
+        <section class="motivational">
+            <div class="container">
+                <p>Just keep in mind that <span class="highlighted">you can do it</span></p>
+            </div>
+        </section>
+        
+        <section class="mwagency">
+            <div class="container">
+                <h2 class="mwagency__title">MWA - MWAgency</h2>
+                <h3 class="mwagency__subtitle">Our portfolio</h3>
+                <div class="mwagency__portfolio">
+                    <div class="wropper">
+                        <div class="content-box">
+                            <div class="card">
+                                <h2>Designs</h2>
+                                <img src="/img/drinking_teclado_3d--v4--stylize_500_6567c11e-b59d-45b3-b45b-d017b6ce52eb.png" alt="">
+                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eaque voluptatem similique quae quo modi aperiam</p>
+                                <a href="" class="know-more">Know more</a>
+                            </div>
+                            <div class="card">
+                                <h2>Logos</h2>
+                                <img src="/img/logos.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eaque voluptatem similique quae quo modi aperiam</p>
+                                <a href="" class="know-more">Know more</a>
+                            </div>
+                            <div class="card">
+                                <h2>Websites</h2>
+                                <img src="/img/pages.png" alt="">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, eaque voluptatem similique quae quo modi aperiam</p>
+                                <a href="" class="know-more">Know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="workprooves">
+            <div class="container">
+                <p>We have worked with:</p>
+                <div class="partners">
+                    <img src="img/IED_Logo 1.png" alt="">
+                    <img src="img/takt.png" alt="">
+                    <img src="img/cloudy.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="datapoint">
+            <div class="container">
+                <h2 class="datapoint__title">MWA Data Point</h2>
+                <p>
+                   <span  class="highlighted">What is MWA?</span>
+                    MWA is a service company focused on marketing, web development, administration
+                    and illustration. Likewise, we offer
+                    other services through partners, these so-called "secondary services"
+                </p>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <h2 class="services__title">Services</h2>
+                <article class="services__graphic-design">
+                    <div class="wrapper">
+                        <img src="/img/clouds.jpeg" alt="">
+                        <div class="text-box">
+                            <div class="image-text">
+                                <h3 class="graphic-design__title">Graphic Design</h3>
+                                <img src="./img/line-md_pencil-twotone.svg" alt="">
+                            </div>
+                            <p class="graphic-design__paragraph">
+                                Boost your business with our graphic design! From a striking brand identity to captivating promotional material
+                                and an
+                                attractive website, our expert designers will help you stand out. On social networks, on shelves and in your
+                                presentations, your brand will shine. Don't miss the opportunity to take your business to the next level! <a href="" class="highlighted">Press the icon to learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="services__web-development">
+                    <div class="wrapper">
+                        <img src="/img/clouds.jpeg" alt="">
+                        <div class="text-box">
+                            <div class="image-text">
+                                <h3 class="web-development__title">Web Development</h3>
+                                <img src="./img/ph_keyboard-duotone.svg" alt="">
+                            </div>
+                            <p class="web-development__paragraph">
+                                Get your business off the ground with our web development service! Imagine an attractive and functional website
+                                that
+                                captures your audience and converts them into customers. Our expert developers will help you stand out online
+                                and
+                                deliver an exceptional user experience. Don't miss the opportunity to boost your business with a high-impact
+                                website.
+                               <a href="" class="highlighted">Press the icon to learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="services__digital-marketing">
+                    <div class="wrapper">
+                        <img src="/img/clouds.jpeg" alt="">
+                        <div class="text-box">
+                            <div class="image-text">
+                                <h3 class="digital-marketing__title">Digital Marketing</h3>
+                                <img src="./img/ph_megaphone-duotone.svg" alt="">
+                            </div>
+                            <p class="digital-marketing__paragraph">
+                                Elevate your business with our digital marketing! From online strategies that capture audiences to customer
+                                conversions,
+                                our experts will help you stand out in the digital world. Don't miss the opportunity to boost your business with
+                                an
+                                effective marketing strategy. <a href="" class="highlighted">Press the icon to learn more</a>
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="secondary-services">
+            <div class="container">
+                <h2 class="secondary-services__title">Secondary services</h2>
+                <div class="boxes">
+                    <div class="secondary-services__video-editing">
+                        <h3>Professional video editing</h3>
+                    </div>
+                    <div class="secondary-services__modeling">
+                        <h3>Professional 3D modeling</h3>
+                    </div>
+                    <div class="secondary-services__photography">
+                        <h3>Professional photography editing</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="flexx">
+                <div class="zone-name">
+                    <p>Contacto:</p>
+                </div>
+                <div class="more" id="Links-x">
+                    <a href="mailto:Megamwagency@gmail.com" class="mail">Megamwagency@gmail.com</a>
+                    <p><a href="http://wa.me/573012166653">Tel: +57 305 3888372</a></p>
+                    <p><a href="http://wa.me/573106021157">Tel: +57 304 2582339</a></p>
+                </div>
+            </div>
+        </footer>
+        <div class="ajustmargin">
+            <div class="linktree"><a href="/LINKTREE/index.html" class="linktreea">
+                    Ve al <b>LinkTree</b> de las redes sociales</a>
+            </div>
+        </div>  
+    </main>
 </body>
 </html>

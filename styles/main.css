@@ -1,0 +1,27 @@
+@import "./index.css";
+@import "./nav.css";
+@import "./footer.css";
+html{
+    scroll-behavior: smooth;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{text-decoration: none;}
+
+:root{
+    --space-section:4em;
+    --space-btw-paragraph: 5em;
+    --space-title-paragraph: 1em;
+}
+
+h2{
+    font-size: 1.5rem;
+}
