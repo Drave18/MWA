@@ -18,6 +18,7 @@ background: #000046;
 .hero h1 {
     text-align: center;
 }
+
 .call_to_action{
     margin-top: var(--space-section);
 }
@@ -37,13 +38,11 @@ background: #000046;
 .call_to_action__suggestions a {
     text-decoration: none;
     font-weight: 600;
-    /* transition: color 0.4s ease; */
 }
 
 
-/* .call_to_action__suggestions a:hover {
-    color: #00ffd5;
-} */
+
+
 
 .color1{
     color: #000046;
@@ -74,19 +73,7 @@ background: #000046;
     margin-top: 10em;
 }
 
-@media screen and (max-width: 1371px){
-    .mwagency{
-        padding: 0 20px;
-    }
-    .content-box{
-        display: flex;
-        justify-content: center;
-    }
-    .workprooves .container, .datapoint, .services, .secondary-services{
-        padding: 0 20px;
-    }
 
-}
 
 .mwagency__title{
     font-weight: 600;
@@ -102,9 +89,8 @@ background: #000046;
 
 .wropper {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
 .wropper h1 {
@@ -117,6 +103,7 @@ background: #000046;
     display: flex;
     flex-wrap: wrap;
     margin-top: 30px;
+    gap: 20px;
 }
 .content-box .card p{
     text-align: left;
@@ -133,7 +120,6 @@ background: #000046;
     align-items: center;
     flex-direction: column;
     background: #fff;
-    margin: 10px 15px;
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
@@ -181,26 +167,6 @@ background: #000046;
 
 
 
-
-@media(max-width:991px) {
-    .wropper {
-        padding: 25px;
-    }
-
-    .wropper h1 {
-        font-size: 2.5em;
-        font-weight: 600;
-    }
-
-
-    .card {
-        min-width: 300px;
-        margin: 10px auto;
-    }
-}
-
-
-
 .items{
     flex-grow: 1;
     flex-basis: 200;
@@ -225,29 +191,32 @@ background: #000046;
 .workprooves{
     margin-top: var(--space-section);
 }
-.partners{
+.workprooves__partners{
     width: 100%;
     height: 200px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-.workprooves .container p{
+
+.workprooves__paragraph{
     margin-bottom: 2em;
 }
-.partners img{
+.workprooves__partners img:nth-child(-n + 2){
     margin-right: 50px;
 }
-.partners img:nth-child(1){
-    max-width: 200px;
+.workprooves__partners img:nth-child(1){
+    max-height: 200px;
 
 }
-.partners img:nth-child(2){
-    max-width: 272px;
+.workprooves__partners img:nth-child(2){
+    max-height: 200px;
+    max-width: 200px;
 }
-.partners img:nth-child(3){
-    max-width: 195px;
+.workprooves__partners img:nth-child(3){
+    max-height: 170px;
 }
+
 .datapoint{
     margin-top: var(--space-section);
 }
@@ -292,7 +261,7 @@ background: #000046;
 
 /* AQUI */
 
-.wrapper img{
+.wrapper img.image{
     float: right;
     margin-left: 10px;
 }
@@ -314,7 +283,6 @@ background: #000046;
 }
 
 
-
 .boxes {
     display: flex;
     flex-wrap: wrap;
@@ -323,11 +291,12 @@ background: #000046;
 
 
 
+
 .secondary-services__video-editing,
 .secondary-services__modeling,
 .secondary-services__photography {
 
-    max-width: 306px;
+    width: 306px;
     height: 159px;
     padding: 20px;
     border-radius: 8px;
@@ -431,6 +400,188 @@ footer {
 
 }
 
+
+
+
+
+
+/* **RESPONSIVE */
+
+@media (max-width:1000px) {
+    .hero .hero__text {
+        font-size: 2.5em;
+    }
+}
+
+/* Estilos para la disposición en dos columnas con dos anchors en cada una hasta 1060px */
+@media screen and (max-width: 1060px) {
+    .call_to_action__suggestions {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+
+}
+
+@media screen and (max-width: 1371px) {
+    .mwagency {
+        padding: 0 20px;
+    }
+
+    .content-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+    .datapoint,
+    .services,
+    .secondary-services,
+    .motivational {
+        padding: 0 30px;
+    }
+
+}
+
+@media(max-width:700px) {
+
+    .mwagency__title,
+    .mwagency__subtitle {
+        text-align: center;
+    }
+
+    .workprooves .container p {
+        text-align: center;
+    }
+    .workprooves{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media (min-width:700px){
+    .workprooves{
+        padding: 0 20px;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .workprooves__partners img:nth-child(-n + 2) {
+        margin-right: 20px;
+    }
+
+    .workprooves__partners img:nth-child(1) {
+        max-height: 100px;
+    }
+
+    .workprooves__partners img:nth-child(2) {
+        max-height: 100px;
+        max-width: 150px;
+    }
+
+    .workprooves__partners img:nth-child(3) {
+        max-height: 85px;
+    }
+}
+@media screen and (min-width:350px) and (max-width:380px) {
+    .workprooves__partners img:nth-child(1) {
+        max-height: 75px;
+    }
+
+    .workprooves__partners img:nth-child(2) {
+        max-height: 65px;
+        max-width: 96px;
+    }
+
+    .workprooves__partners img:nth-child(3) {
+        max-height: 56px;
+    }
+
+    .card {
+        max-width: 227px;
+    }
+
+
+
+}
+
+@media screen and (max-width:390px) {
+    .workprooves__partners img:nth-child(1) {
+        max-height: 80px;
+    }
+
+    .workprooves__partners img:nth-child(2) {
+        max-height: 80px;
+        max-width: 120px;
+    }
+
+    .workprooves__partners img:nth-child(3) {
+        max-height: 70px;
+    }
+
+    .card {
+        max-width: 283px;
+    }
+
+
+}
+
+
+@media(max-width:991px) {
+    .wropper h1 {
+        font-size: 2.5em;
+        font-weight: 600;
+    }
+
+
+    .card {
+        min-width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 600px) and (max-width:900px) {
+    .workprooves__partners img:nth-child(1) {
+        max-width: 150px;
+    }
+
+    .workprooves__partners img:nth-child(2) {
+        max-width: 201.96px;
+    }
+
+    .workprooves__partners img:nth-child(3) {
+        max-width: 144.78px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .wrapper img.image {
+        order: 1;
+        /* Cambia el orden de la imagen para que aparezca después del texto del título */
+        margin-top: 1em;
+        margin-left: 0;
+        /* Ajusta el espacio entre la imagen y el título */
+    }
+
+}
 
 
 

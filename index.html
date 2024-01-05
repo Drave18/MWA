@@ -10,23 +10,33 @@
 </head>
 <body>
     <main>
-    <header class="header">
-        <a href="./index.html" class="logo">
-            <img src="/img/MWA_LOGO.svg" alt="" class="logo-original">
-            <img src="/img/mwa_logo3.png" alt="" style="display: none;" class="white-logo">
-        </a>
-        <ul class="navbar">
-            <li><a href="#">Digital Marketing</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Graphic Design</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="main">
-            <!-- uso del menu de remix icons -->
-            <div class="bx bx-menu" id="menu-icon"></div>
-        </div>
-        <script src="./scripts/nav.js"></script>
-    </header>
+        <header class="header">
+            <div class="logo">
+                <a href="">
+                    <img src="/img/MWA_LOGO.svg" alt="">
+                </a>
+            </div>
+            <input type="checkbox" id="nav_check" hidden>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="">Digital Marketing</a>
+                    </li>
+                    <li>
+                        <a href="">Web Development</a>
+                    </li>
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <label for="nav_check" class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <script src="./scripts/nav.js"></script>
+        </header>
         
         <section class="hero">
             <div class="hero__text">
@@ -50,7 +60,7 @@
         <!-- TODO:We can add some illustration that attaches this -->
         <section class="motivational">
             <div class="container">
-                <p>Just keep in mind that <span class="highlighted">you can do it</span></p>
+                <p class="motivational__paragraph">Just keep in mind that <span class="highlighted">you can do it</span></p>
             </div>
         </section>
         
@@ -86,8 +96,8 @@
         </section>
         <section class="workprooves">
             <div class="container">
-                <p>We have worked with:</p>
-                <div class="partners">
+                <p class="workprooves__paragraph">We have worked with:</p>
+                <div class="workprooves__partners">
                     <img src="img/IED_Logo 1.png" alt="">
                     <img src="img/takt.png" alt="">
                     <img src="img/cloudy.png" alt="">
@@ -98,7 +108,7 @@
         <section class="datapoint">
             <div class="container">
                 <h2 class="datapoint__title">MWA Data Point</h2>
-                <p>
+                <p class="datapoint__paragraph">
                    <span  class="highlighted">What is MWA?</span>
                     MWA is a service company focused on marketing, web development, administration
                     and illustration. Likewise, we offer
@@ -112,7 +122,7 @@
                 <h2 class="services__title">Services</h2>
                 <article class="services__graphic-design">
                     <div class="wrapper">
-                        <img src="/img/clouds.jpeg" alt="">
+                        <img src="/img/clouds.jpeg" alt="" class="image">
                         <div class="text-box">
                             <div class="image-text">
                                 <h3 class="graphic-design__title">Graphic Design</h3>
@@ -130,7 +140,7 @@
                 
                 <article class="services__web-development">
                     <div class="wrapper">
-                        <img src="/img/clouds.jpeg" alt="">
+                        <img src="/img/clouds.jpeg" alt="" class="image">
                         <div class="text-box">
                             <div class="image-text">
                                 <h3 class="web-development__title">Web Development</h3>
@@ -151,7 +161,7 @@
                 
                 <article class="services__digital-marketing">
                     <div class="wrapper">
-                        <img src="/img/clouds.jpeg" alt="">
+                        <img src="/img/clouds.jpeg" alt="" class="image">
                         <div class="text-box">
                             <div class="image-text">
                                 <h3 class="digital-marketing__title">Digital Marketing</h3>
