@@ -59,7 +59,7 @@ ScrollReveal().reveal(".workprooves__images", {
   distance: "50px",
   origin: "bottom",
   easing: "ease-in-out",
-  interval: 200,
+  interval: 100,
 });
 
 ScrollReveal().reveal(".datapoint__title", {
