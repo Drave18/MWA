@@ -15,7 +15,7 @@ ScrollReveal().reveal(".call_to_action", {
 });
 
 ScrollReveal().reveal(".motivational", {
-  delay: 300,
+  delay: 900,
   distance: "50px",
   origin: "bottom",
   easing: "ease-in-out",
@@ -59,7 +59,7 @@ ScrollReveal().reveal(".workprooves__images", {
   distance: "50px",
   origin: "bottom",
   easing: "ease-in-out",
-  interval: 100,
+  interval: 50,
 });
 
 ScrollReveal().reveal(".datapoint__title", {
