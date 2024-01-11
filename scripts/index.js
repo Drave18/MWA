@@ -1,10 +1,14 @@
-ScrollReveal().reveal(".hero", {
-  delay: 300,
-  distance: "50px",
-  origin: "bottom",
-  easing: "ease-in-out",
-  interval: 100,
-});
+//TODO: find out why scroll reveal is interfering whit css nav bar.
+
+// ScrollReveal().reveal(".hero", {
+//   delay: 300,
+//   distance: "50px",
+//   origin: "bottom",
+//   easing: "ease-in-out",
+//   interval: 100,
+// });
+
+
 
 ScrollReveal().reveal(".call_to_action", {
   delay: 600,
